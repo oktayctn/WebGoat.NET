@@ -1,9 +1,8 @@
 pool: Default
 
 steps:
-  
-- task: FortifyDynamicAssessment@7
-  inputs:
-    ScanSettings: 'wiazure'
-    APIRoot: 'http://192.168.13.142:8083/'
-    ScanResultsLocation: 'C:\Users\Administrator\Desktop\rapor'
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: '.\WI.exe -s C:\ProgramData\HP\HP WebInspect\Settings\wiazure -r "Vulnerability" -y Standard -f C:\Users\Administrator\Desktop\test123456.pdf -gp'
+      workingDirectory: 'C:\Program Files\Fortify\Fortify WebInspect'
