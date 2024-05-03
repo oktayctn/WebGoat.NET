@@ -1,4 +1,4 @@
-pool: Default
+pool: Azure Pipelines
 
 steps:
   - task: PowerShell@2
