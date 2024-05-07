@@ -1,9 +1,9 @@
-pool: WIN-6LVD1VVLQ3P
+pool: Default
 
 steps:
   
 - task: FortifyDynamicAssessment@7
   inputs:
-    ScanSettings: 'azure_test'
+    ScanSettings: 'wiazure'
     APIRoot: 'http://192.168.13.40:8083/'
     ScanResultsLocation: 'C:\Users\Administrator\Desktop\rapor'
