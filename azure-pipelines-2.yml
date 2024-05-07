@@ -1,0 +1,5 @@
+- task: FortifyDynamicAssessment@7
+  inputs:
+    ScanSettings: 'azure_test'
+    APIRoot: 'http://192.168.13.142:8083/'
+    ScanResultsLocation: 'C:\Users\Administrator\Desktop\rapor'
